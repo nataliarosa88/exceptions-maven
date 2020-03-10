@@ -13,8 +13,12 @@ public class Excecoes {
 
     public void Dividir(){
         int divisao;
-        divisao = a / b;
-        System.out.println(divisao);
+        try {
+            divisao = a / b;
+            System.out.println(divisao);
+        }catch (Exception e){
+            System.out.println("O sistema não pode dividir por zero");
+        }
     }
 
     public void Texto(){
