@@ -11,14 +11,10 @@ public class Excecoes {
         System.out.println(soma);
     }
 
-    public void Dividir(){
+    public void Dividir() throws Exception{
         int divisao;
-        try {
-            divisao = a / b;
-            System.out.println(divisao);
-        }catch (Exception e){
-            System.out.println("O sistema não pode dividir por zero");
-        }
+        divisao = a / b;
+        System.out.println(divisao);
     }
 
     public void Texto(){

@@ -5,10 +5,14 @@ import org.junit.jupiter.api.Test;
 public class ExcecoesTest {
 
     @Test
-    public void TestaExcecoes(){
+    public void TestaExcecoes() {
         Excecoes excecoes = new Excecoes();
         excecoes.Somar();
-        excecoes.Dividir();
+        try {
+            excecoes.Dividir();
+        }catch(Exception e){
+            System.out.println("Sistema não pode dividir por zero");
+        }
         excecoes.Texto();
     }
 
